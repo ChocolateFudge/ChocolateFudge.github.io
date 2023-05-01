@@ -6,21 +6,61 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home | My Website</title>
     <style>
+        /* Existing styles */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Courier New', monospace;
             margin: 0;
             padding: 0;
             background-color: #F8F0E3;
         }
 
         header {
-            background-color: #1a1a1a;
+            background-color: #7851a9;
             padding: 1rem;
             color: white;
             font-size: 1.5rem;
             text-align: center;
         }
 
+        /* New styles for the disc navigation */
+        .circle-menu {
+            position: fixed;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .circle-menu ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .circle-menu li {
+            margin-bottom: 10px;
+        }
+
+        .circle-menu a {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background-color: #333;
+            color: #fff;
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+
+        .circle-menu a:hover {
+            background-color: #666;
+            transform: scale(1.1);
+        }
+
+        /* Rest of the existing styles */
         .container {
             max-width: 960px;
             margin: 1.5rem auto;
@@ -62,7 +102,8 @@
         }
 
         .button:hover {
-            background-color: #404040;
+            background-color: #FFD700;
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
         }
     </style>
 </head>
@@ -71,12 +112,13 @@
     <header>
         My Website
     </header>
-    <nav>
-        <div class="container">
-            <a href="index.html" class="button">About Me</a>
-            <a href="experiences.html" class="button">My Experiences</a>
-            <a href="projects.html" class="button">My Projects</a>
-        </div>
+    <!-- Disc-shaped navigation bar -->
+    <nav class="circle-menu">
+        <ul>
+            <li><a href="index.html" title="About Me">A</a></li>
+            <li><a href="experiences.html" title="My Experiences">E</a></li>
+            <li><a href="projects.html" title="My Projects">P</a></li>
+        </ul>
     </nav>
     <div class="container">
         <section class="section">
@@ -111,10 +153,10 @@
                 If you'd like to get in touch with me, feel free to reach out at:
             </p>
             <p>
-                Email: <a href="mailto:example@example.com">example@example.com</a>
-</p>
-</section>
-</div>
+                Email: <a href="mailto:kishnanitech@gmail.com">kishnanitech@gmail.com</a>
+            </p>
+        </section>
+    </div>
 
 </body>
 </html>
