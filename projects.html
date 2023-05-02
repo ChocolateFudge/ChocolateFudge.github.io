@@ -5,83 +5,76 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Projects | My Website</title>
-    <style>
-        body {
-            font-family: 'Courier New', monospace;
-		
-            margin: 0;
-            padding: 0;
-            background-color: #F8F0E3;
-        }
-
-        header {
-            background-color: #7851a9;
-            padding: 1rem;
-            color: white;
-            font-size: 1.5rem;
-            text-align: center;
-        }
-
-        .container {
-            max-width: 960px;
-            margin: 1.5rem auto;
-            padding: 1.5rem;
-            background-color: white;
-            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-        }
-
-        .section {
-            margin-bottom: 2rem;
-        }
-
-        h2 {
-            font-size: 1.5rem;
-            border-bottom: 2px solid #1a1a1a;
-            padding-bottom: 0.5rem;
-        }
-
-        p {
-            line-height: 1.5;
-        }
-
-        .button-container {
-            display: flex;
-            justify-content: center;
-            gap: 1rem;
-            margin-bottom: 1rem;
-        }
-
-        .button {
-            display: inline-block;
-            background-color: #1a1a1a;
-            color: white;
-            text-decoration: none;
-            padding: 0.5rem 1rem;
-            font-size: 1rem;
-            border-radius: 4px;
-            transition: background-color 0.3s;
-        }
-
-        .button:hover {
-            background-color: #FFD700;
-
-        }
-    </style>
-
+    <link rel="stylesheet" href="terminal.css">
+    <link rel="stylesheet" href="t/styleBasic.css">
 </head>
 
 <body>
-    <header>
-        My Projects
-    </header>
-    <nav>
-        <div class="container">
-            <a href="" class="button">About Me</a>
-            <a href="experiences.html" class="button">My Experiences</a>
-            <a href="projects.html" class="button">My Projects</a>
-        </div>
-    </nav>
+<header>
+    My Projects
+</header>
+
+<nav>
     <div class="container">
-        <!-- Add your projects content here -->
+        <button class="button" data-page="about">About Me</button>
+        <button class="button" data-page="experiences">My Experiences</button>
+        <button class="button" data-page="projects">My Projects</button>
     </div>
-</body
+</nav>
+<div class="container" id="container-about">
+    <!-- Add your about content here -->
+</div>
+<div class="container" id="container-experiences">
+    <!-- Add your experiences content here -->
+</div>
+<div class="container" id="container-projects">
+    <!-- Add your projects content here -->
+    <section class="section">
+        <h2>Projects</h2>
+        <div class="Marketing Hearty Crisps">
+            <div class="project__instagram">
+                <iframe src="https://www.instagram.com/heartycrisp.co/embed" width="320" height="430" frameborder="0" scrolling="no" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>
+            </div>
+            <div class="project__description">
+                <h3>Promoting Hearty Crisps</h3>
+                <p>February 2022 - March 2022</p>
+                <ul>
+                    In Feb-Mar 2022, I promoted Hearty Crisps, vacuum-fried chips that we created from scratch, from scratch. Over 6 weeks, I marketed it on Facebook and Instagram, creating buzz around the unique product features. It was a rewarding experience, gaining valuable marketing and promotion skills.
+                </ul>
+                <ul>
+                    We were able to get 140 followers in a 6 week time span, a succsfull marketing campagin for a product that does not exist, and had 0 followers in the start.
+                </ul>
+            </div>
+        </div>
+    </section>
+</div>
+
+<div class="container" id="container-terminal">
+    <div class="terminal">
+        <div class="terminal__header">
+            <span class="terminal__button terminal__button--red"></span>
+            <span class="terminal__button terminal__button--yellow"></span>
+            <span class="terminal__button terminal__button--green"></span>
+        </div>
+        <pre class="terminal__content">$ I was able to create a shell from scratch</pre>
+    </div>
+</div>
+
+<script>
+    document.querySelectorAll('.button').forEach(function (button) {
+        button.addEventListener('click', function () {
+            const pageToShow = this.getAttribute('data-page');
+            const containers = document.querySelectorAll('.container');
+
+            containers.forEach(function (container) {
+                if (container.id === 'container-' + pageToShow) {
+                    container.classList.remove('container-slide-out', 'container-slide-in');
+                } else {
+                    container.classList.add('container-slide-out');
+                }
+            });
+        });
+    });
+</script>
+</body>
+</html>
