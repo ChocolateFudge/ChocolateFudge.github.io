@@ -39,11 +39,10 @@ nav {
 }
 .container-static{
     margin-bottom: 0;
-    position: relative;
+    position: absolute;
     transition: transform 2s;
     top: 70px;
-
-    width: 80%;
+    width: 99%;
     padding: 0.5rem;
     background-color: transparent;
     border-radius: 15px; /* Add or modify this line to adjust the corner roundness */
@@ -53,9 +52,9 @@ nav {
     position: absolute;
     transition: transform 2s;
     top: 140px;
-    left: 0;
+    left: 10%;
     width: 100%;
-    max-width: 960px;
+    max-width: 80%;
     margin: 1.5rem auto;
     padding: 1.5rem;
     background-color: antiquewhite;
@@ -80,7 +79,10 @@ nav {
     transition: transform 0.5s ease-in-out;
 }
 
-
+.container-active {
+    display: block;
+    animation: slide-in 0.5s;
+}
 
 
 @keyframes slide-in {
@@ -88,6 +90,14 @@ nav {
         transform: translateX(100%);
     }
     100% {
+        transform: translateX(0);
+    }
+    from {
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to {
+        opacity: 1;
         transform: translateX(0);
     }
 }

@@ -113,15 +113,11 @@
 
             containers.forEach(function (container) {
                 if (container.id === "container-" + pageToShow) {
-                    container.classList.remove("container-slide-out", "container-hidden");
-                    container.classList.add("container-slide-in");
+                    container.classList.remove("container-hidden");
+                    container.classList.add("container-active");
                 } else {
-                    container.classList.add("container-slide-out");
-                    container.classList.remove("container-slide-in");
-
-                    container.addEventListener("transitionend", function () {
-                        container.classList.add("container-hidden");
-                    }, { once: true });
+                    container.classList.add("container-hidden");
+                    container.classList.remove("container-active");
                 }
             });
         });
@@ -129,7 +125,8 @@
 
     // Show the first container by default
     document.querySelector("#container-about").classList.remove("container-hidden");
-    document.querySelector("#container-about").classList.add("container-slide-in");
+    document.querySelector("#container-about").classList.add("container-active");
+
 </script>
 
 
