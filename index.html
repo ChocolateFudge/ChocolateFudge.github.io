@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home | My Website</title>
+<!--    <title>Home | My Website</title>-->
     <link rel="stylesheet" href="terminal.css">
     <link rel="stylesheet" href="styleBasic.css">
 </head>
 
 <body>
-<header>
-    My Website
-</header>
+<!--<header>-->
+<!--    My Website-->
+<!--</header>-->
 <nav>
     <div class="container-static">
         <button class="button" data-page="about">About Me</button>
@@ -22,9 +22,40 @@
 </nav>
 <div id="content-container">
     <div class="container container-hidden" id="container-about">
-        <!-- Add your about content here -->
+        <div class="sepe" id="About Me">
+                <section class="section">
+                    <h2>Welcome!</h2>
+                    <p>
+                        Welcome to my website! I am Harsh Kishnani Here,
+                        you'll find information about me, my interests, and the projects I've worked on.
+                        Feel free to explore and learn more about my journey in the world of technology and design.
+                    </p>
+                </section>
+
+
+                <section class="section">
+                    <h2>About Me</h2>
+                    <p>
+                        I am a passionate and dedicated individual with a strong background in computer science, web development,
+                        and design. My interests span a wide range of areas, including software development, user experience
+                        design, and artificial intelligence. I am always eager to learn new skills and take on exciting
+                        challenges.
+                    </p>
+                </section>
+
+                <section class="section">
+                    <h2>Contact</h2>
+                    <p>
+                        If you'd like to get in touch with me, feel free to reach out at:
+                    </p>
+                    <p>
+                        Email: <a href="mailto:kishnanitech@gmail.com">kishnanitech@gmail.com</a>
+                    </p>
+                </section>
+        </div>
     </div>
     <div class="container container-hidden" id="container-experiences">
+        <div class="sepe" id="Resume">
             <section class="section">
                 <h2>Education</h2>
                 <ul>
@@ -90,10 +121,31 @@
                     <li>Connected to Database</li>
                 </ul>
             </section>
+        </div>
     </div>
     <div class="container container-hidden" id="container-projects">
-
-
+        <div class="sepe" id="instagram-project">
+            <!-- Add your projects content here -->
+            <section class="section">
+                <h2>Projects</h2>
+                <div class="Marketing Hearty Crisps">
+                    <div class="project__instagram">
+                        <iframe src="https://www.instagram.com/heartycrisp.co/embed" width="320" height="430" frameborder="0" scrolling="no" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>
+                    </div>
+                    <div class="project__description">
+                        <h3>Promoting Hearty Crisps</h3>
+                        <p>February 2022 - March 2022</p>
+                        <ul>
+                            In Feb-Mar 2022, I promoted Hearty Crisps, vacuum-fried chips that we created from scratch, from scratch. Over 6 weeks, I marketed it on Facebook and Instagram, creating buzz around the unique product features. It was a rewarding experience, gaining valuable marketing and promotion skills.
+                        </ul>
+                        <ul>
+                            We were able to get 140 followers in a 6 week time span, a succsfull marketing campagin for a product that does not exist, and had 0 followers in the start.
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="sepe" id="Terminal Content">
             <div class="terminal">
                 <div class="terminal__header">
                     <span class="terminal__button terminal__button--red"></span>
@@ -102,6 +154,7 @@
                 </div>
                 <pre class="terminal__content">$ I was able to create a shell from scratch</pre>
             </div>
+        </div>
     </div>
 </div>
 

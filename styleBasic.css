@@ -5,18 +5,18 @@ body {
     background-color: #C4AEAD;
 }
 
-header {
-    background-color: antiquewhite;
-    padding: 1rem;
-    color: purple;
-    font-size: 1.5rem;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 999;
-}
+/*header {*/
+/*    background-color: antiquewhite;*/
+/*    padding: 1rem;*/
+/*    color: purple;*/
+/*    font-size: 1.5rem;*/
+/*    text-align: center;*/
+/*    position: fixed;*/
+/*    top: 0;*/
+/*    left: 0;*/
+/*    right: 0;*/
+/*    z-index: 999;*/
+/*}*/
 
 nav {
     position: relative;
@@ -47,6 +47,7 @@ nav {
     background-color: transparent;
     border-radius: 15px; /* Add or modify this line to adjust the corner roundness */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24);
+    overflow-x: hidden;
 }
 .container {
     position: absolute;
@@ -57,9 +58,23 @@ nav {
     max-width: 80%;
     margin: 1.5rem auto;
     padding: 1.5rem;
-    background-color: antiquewhite;
+    background-color: transparent;
+    border-radius: 15px; /* Add or modify this line to adjust the corner roundness */
+    /*box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24); !* Modify this line to adjust the box-shadow *!*/
+    overflow-x: hidden;
+}
+.sepe{
+    position: center;
+    top: 140px;
+    left: 10%;
+    width: 100%;
+    max-width: 80%;
+    margin: 1.5rem auto;
+    padding: 1.5rem;
+    background-color: floralwhite;
     border-radius: 15px; /* Add or modify this line to adjust the corner roundness */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12), 0 3px 8px rgba(0, 0, 0, 0.24); /* Modify this line to adjust the box-shadow */
+
 }
 .container-hidden {
     display: none;
