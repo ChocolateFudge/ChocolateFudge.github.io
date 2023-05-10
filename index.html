@@ -4,6 +4,14 @@
     <meta charset="UTF-8">
     <title>Title</title>
     <link rel="stylesheet" href="styles.css">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const book = document.querySelector(".book");
+            book.addEventListener("click", function() {
+                book.classList.toggle("clicked");
+            });
+        });
+    </script>
 </head>
 <body>
     <div class="book">

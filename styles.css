@@ -19,14 +19,14 @@ body{
     align-items: center;
     cursor: pointer;
 }
-.book.click.cover{
+.book.clicked .cover {
     transform: rotateX(10deg) rotateY(-180deg);
 }
-.book:active .page{
+
+.book.clicked .page {
     transform: rotateX(10deg) rotateY(-180deg);
     z-index: 2;
 }
-
 .cover{
     z-index: 1;
     transition: all 3s;
