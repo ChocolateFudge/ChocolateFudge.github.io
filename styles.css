@@ -1,0 +1,107 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: lightsalmon;
+    perspective: 1000px;
+}
+
+.book{
+    /*height: 100vh;*/
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.book.click.cover{
+    transform: rotateX(10deg) rotateY(-180deg);
+}
+.book:active .page{
+    transform: rotateX(10deg) rotateY(-180deg);
+    z-index: 2;
+}
+
+.cover{
+    z-index: 1;
+    transition: all 3s;
+}
+.backCover{
+    z-index: -2;
+}
+
+.cover,
+.backCover{
+    height: 75%;
+    /*height: 300px;*/
+    width: 35%;
+    /*width: 260px;*/
+    background: #ff5f56;
+    border-radius: 2px 20px 20px 2px;
+    position: absolute;
+    box-shadow: 1px 1px 10px darkgray;
+    transform: rotateX(10deg);
+    transform-origin: center left;
+
+}
+.page,
+.lastPage{
+    height: 73%;
+    width: 33%;
+    background: antiquewhite;
+    position: absolute;
+    border-radius: 2px 10px 10px 2px;
+    z-index: -1;
+    transform: rotateX(10deg);
+    transform-origin: center left;
+
+}
+.page:nth-child(2){
+    transition-duration: 5s;
+}
+.page:nth-child(3){
+    transition-duration: 4s;
+}
+.page:nth-child(4){
+    transition-duration: 3s;
+}
+.page:nth-child(5){
+    transition-duration: 2s;
+}
+.page:nth-child(6) {
+    transition-duration: 1s;
+}
+
+.book:hover .page:nth-child(2){
+    transition-duration: 6s;
+}
+.book:hover .page:nth-child(3){
+    transition-duration: 5.5s;
+}
+.book:hover .page:nth-child(4){
+    transition-duration: 5s;
+}
+.book:hover .page:nth-child(5){
+    transition-duration: 4.5s;
+}
+.book:hover .page:nth-child(6){
+    transition-duration: 4s;
+}
+
+.lastPage img{
+    width: 150px;
+    display: block;
+    border-radius: 50%;
+    margin: 20px auto;
+    position: relative;
+    z-index: -1;
+}
+.lastPage h2{
+    text-align: center;
+    font-size: 32px;
+}

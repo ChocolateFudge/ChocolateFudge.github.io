@@ -4,77 +4,186 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Projects | My Website</title>
+    <!--    <title>Home | My Website</title>-->
     <link rel="stylesheet" href="terminal.css">
-    <link rel="stylesheet" href="t/styleBasic.css">
+    <link rel="stylesheet" href="styleBasic.css">
 </head>
 
 <body>
-<header>
-    My Projects
-</header>
-
+<!--<header>-->
+<!--    My Website-->
+<!--</header>-->
 <nav>
-    <div class="container">
+    <div class="container-static">
         <button class="button" data-page="about">About Me</button>
         <button class="button" data-page="experiences">My Experiences</button>
         <button class="button" data-page="projects">My Projects</button>
     </div>
 </nav>
-<div class="container" id="container-about">
-    <!-- Add your about content here -->
-</div>
-<div class="container" id="container-experiences">
-    <!-- Add your experiences content here -->
-</div>
-<div class="container" id="container-projects">
-    <!-- Add your projects content here -->
-    <section class="section">
-        <h2>Projects</h2>
-        <div class="Marketing Hearty Crisps">
-            <div class="project__instagram">
-                <iframe src="https://www.instagram.com/heartycrisp.co/embed" width="320" height="430" frameborder="0" scrolling="no" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>
-            </div>
-            <div class="project__description">
-                <h3>Promoting Hearty Crisps</h3>
-                <p>February 2022 - March 2022</p>
-                <ul>
-                    In Feb-Mar 2022, I promoted Hearty Crisps, vacuum-fried chips that we created from scratch, from scratch. Over 6 weeks, I marketed it on Facebook and Instagram, creating buzz around the unique product features. It was a rewarding experience, gaining valuable marketing and promotion skills.
-                </ul>
-                <ul>
-                    We were able to get 140 followers in a 6 week time span, a succsfull marketing campagin for a product that does not exist, and had 0 followers in the start.
-                </ul>
-            </div>
-        </div>
-    </section>
-</div>
+<div id="content-container">
+    <div class="container container-hidden" id="container-about">
+        <div class="sepe" id="About Me">
+            <section class="section">
+                <h2>Welcome!</h2>
+                <p>
+                    Welcome to my website! I am Harsh Kishnani Here,
+                    you'll find information about me, my interests, and the projects I've worked on.
+                    Feel free to explore and learn more about my journey in the world of technology and design.
+                </p>
+            </section>
 
-<div class="container" id="container-terminal">
-    <div class="terminal">
-        <div class="terminal__header">
-            <span class="terminal__button terminal__button--red"></span>
-            <span class="terminal__button terminal__button--yellow"></span>
-            <span class="terminal__button terminal__button--green"></span>
+
+            <section class="section">
+                <h2>About Me</h2>
+                <p>
+                    I am a passionate and dedicated individual with a strong background in computer science, web development,
+                    and design. My interests span a wide range of areas, including software development, user experience
+                    design, and artificial intelligence. I am always eager to learn new skills and take on exciting
+                    challenges.
+                </p>
+            </section>
+
+            <section class="section">
+                <h2>Contact</h2>
+                <p>
+                    If you'd like to get in touch with me, feel free to reach out at:
+                </p>
+                <p>
+                    Email: <a href="mailto:kishnanitech@gmail.com">kishnanitech@gmail.com</a>
+                </p>
+            </section>
         </div>
-        <pre class="terminal__content">$ I was able to create a shell from scratch</pre>
+    </div>
+    <div class="container container-hidden" id="container-experiences">
+        <div class="sepe" id="Resume">
+            <section class="section">
+                <h2>Education</h2>
+                <ul>
+                    <li>Mahidol University | Salaya, Thailand (Computer Science Major & Marketing Minor, Expected Graduation: 2024)</li>
+                    <li>The Pennsylvania State University | Erie, Pennsylvania (Transferred: 2018-2020)</li>
+                    <li>NIST International School of Thailand | High school and IB diploma (Graduation: May 2018)</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>Experience</h2>
+                <h3>Tech Support | PSU Erie Information Technology</h3>
+                <p>September 2019-May 2020</p>
+                <ul>
+                    <li>Worked as a Tech Support for University Students</li>
+                    <li>Helped Fixed computer issues, on a Hardware and Software level</li>
+                    <li>Worked behind the scenes to help get the PSU network around the University Efficiently</li>
+                </ul>
+                <h3>Employee | PSU Erie Dining</h3>
+                <p>September 2018-May 2019</p>
+                <ul>
+                    <li>Worked as a cashier during my first year of University</li>
+                </ul>
+                <h3>Salesman | Moonriver by VJ | Bangkok, Thailand</h3>
+                <p>July 2015-August 2018</p>
+                <ul>
+                    <li>Worked in tailor shop in Bangkok Thailand</li>
+                    <li>Inquired and welcomed customers anticipated their needs</li>
+                    <li>Answered questions about quality, price, and possible discounts on the clothing</li>
+                    <li>Sold Bespoke suits, shirts, and other attire to customers</li>
+                </ul>
+                <h3>Designing login features | Krungsri Insurance | Bank of Ayutthaya</h3>
+                <p>May 2015-August 2015</p>
+                <ul>
+                    <li>Researched different techniques to verify people into the insurance application</li>
+                    <li>Presented these techniques to the app development group</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>Related Skills</h2>
+                <ul>
+                    <li>Java Programing</li>
+                    <li>C++ Programing</li>
+                    <li>Python Programing</li>
+                    <li>C Programing</li>
+                </ul>
+            </section>
+            <section class="section">
+                <h2>Projects</h2>
+                <h3>Promoter | Hearty Crisps
+                    | Thailand</h3>
+                <p>February 2022-March 2022</p>
+                <ul>
+                    <li>Promoted a product from Scratch</li>
+                    <li>Marketed it on Facebook and Instagram over a 6 week Period</li>
+                    <li><a href="https://www.instagram.com/heartycrisp.co/" target="_blank">https://www.instagram.com/heartycrisp.co/</a></li>
+                </ul>
+                <h3>Java programmer | Website</h3>
+                <p>September 2022-December 2022</p>
+                <ul>
+                    <li>Created & Deployed website from scratch</li>
+                    <li>Website was a sport appointment system to book basketball courts</li>
+                    <li>Learned Java structure Frontend/Backend Connecting both sides</li>
+                    <li>Connected to Database</li>
+                </ul>
+            </section>
+        </div>
+    </div>
+    <div class="container container-hidden" id="container-projects">
+        <div class="sepe" id="instagram-project">
+            <!-- Add your projects content here -->
+            <section class="section">
+                <h2>Projects</h2>
+                <div class="Marketing Hearty Crisps">
+                    <div class="project__instagram">
+                        <iframe src="https://www.instagram.com/heartycrisp.co/embed" width="320" height="430" frameborder="0" scrolling="no" allowtransparency="true" style="border:none;overflow:hidden;"></iframe>
+                    </div>
+                    <div class="project__description">
+                        <h3>Promoting Hearty Crisps</h3>
+                        <p>February 2022 - March 2022</p>
+                        <ul>
+                            In Feb-Mar 2022, I promoted Hearty Crisps, vacuum-fried chips that we created from scratch, from scratch. Over 6 weeks, I marketed it on Facebook and Instagram, creating buzz around the unique product features. It was a rewarding experience, gaining valuable marketing and promotion skills.
+                        </ul>
+                        <ul>
+                            We were able to get 140 followers in a 6 week time span, a succsfull marketing campagin for a product that does not exist, and had 0 followers in the start.
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="sepe" id="Terminal Content">
+            <div class="terminal">
+                <div class="terminal__header">
+                    <span class="terminal__button terminal__button--red"></span>
+                    <span class="terminal__button terminal__button--yellow"></span>
+                    <span class="terminal__button terminal__button--green"></span>
+                </div>
+                <pre class="terminal__content">$ I was able to create a shell from scratch</pre>
+            </div>
+        </div>
     </div>
 </div>
 
 <script>
-    document.querySelectorAll('.button').forEach(function (button) {
-        button.addEventListener('click', function () {
-            const pageToShow = this.getAttribute('data-page');
-            const containers = document.querySelectorAll('.container');
+    document.querySelectorAll(".button").forEach(function (button) {
+        button.addEventListener("click", function () {
+            const pageToShow = this.getAttribute("data-page");
+            const containers = document.querySelectorAll("#content-container .container");
 
             containers.forEach(function (container) {
-                if (container.id === 'container-' + pageToShow) {
-                    container.classList.remove('container-slide-out', 'container-slide-in');
+                if (container.id === "container-" + pageToShow) {
+                    container.classList.remove("container-hidden");
+                    container.classList.add("container-active");
                 } else {
-                    container.classList.add('container-slide-out');
+                    container.classList.add("container-hidden");
+                    container.classList.remove("container-active");
                 }
             });
         });
     });
+
+    // Show the first container by default
+    document.querySelector("#container-about").classList.remove("container-hidden");
+    document.querySelector("#container-about").classList.add("container-active");
+
 </script>
+
+
+
+
 </body>
 </html>
